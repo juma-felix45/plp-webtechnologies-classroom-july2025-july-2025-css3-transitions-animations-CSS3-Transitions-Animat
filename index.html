@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Great Men Retail Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Great Men Retail Platform</h1>
+    <button id="cartBtn">View Cart (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <main>
+    <!-- Product Cards -->
+    <div class="product-card flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://picsum.photos/200/250?random=1" alt="Smart Watch" />
+          <h3>Smart Watch</h3>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="flip-card-back">
+          <h3>Smart Watch</h3>
+          <p>Features: Heart rate, GPS, Notifications</p>
+          <p>Price: $199</p>
+          <button class="buy-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://picsum.photos/200/250?random=3" alt="Bluetooth Speaker" />
+          <h3>Bluetooth Speaker</h3>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="flip-card-back">
+          <h3>Bluetooth Speaker</h3>
+          <p>Features: Waterproof, 12-hour battery life</p>
+          <p>Price: $49</p>
+          <button class="buy-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://picsum.photos/200/250?random=4" alt="Fitness Tracker" />
+          <h3>Fitness Tracker</h3>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="flip-card-back">
+          <h3>Fitness Tracker</h3>
+          <p>Features: Step counter, Sleep monitor</p>
+          <p>Price: $79</p>
+          <button class="buy-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://picsum.photos/200/250?random=2" alt="Wireless Earbuds" />
+          <h3>Wireless Earbuds</h3>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="flip-card-back">
+          <h3>Wireless Earbuds</h3>
+          <p>Features: Noise canceling, Long battery life</p>
+          <p>Price: $99</p>
+          <button class="buy-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://picsum.photos/200/250?random=5" alt="4K Action Camera" />
+          <h3>4K Action Camera</h3>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="flip-card-back">
+          <h3>4K Action Camera</h3>
+          <p>Features: Waterproof, 4K recording</p>
+          <p>Price: $149</p>
+          <button class="buy-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="https://picsum.photos/200/250?random=6" alt="E-Reader" />
+          <h3>E-Reader</h3>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="flip-card-back">
+          <h3>E-Reader</h3>
+          <p>Features: Adjustable light, Long battery life</p>
+          <p>Price: $129</p>
+          <button class="buy-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Cart Modal -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal">&times;</span>
+      <h2>Your Cart</h2>
+      <p id="cartMessage">Your cart is empty.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

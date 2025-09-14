@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #007BFF;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px; /* space between cards */
+}
+
+/* Flip Card Styles */
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.buy-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buy-btn:hover {
+  background-color: #218838;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main {
+    gap: 15px;
+  }
+  .flip-card {
+    width: 150px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .flip-card {
+    width: 120px;
+    height: 200px;
+  }
+}
